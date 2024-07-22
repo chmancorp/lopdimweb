@@ -1,0 +1,21 @@
+.menubar-left, .menubar-center, .menubar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menubar-left {
+    flex: 1;
+    justify-content: start;
+  }
+  
+  .menubar-center {
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .menubar-right {
+    flex: 1;
+    justify-content: flex-end;
+  }
+  
