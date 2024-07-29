@@ -1,1 +1,11 @@
-<p>Bienvenidos a lopdim uniformes</p>
+<p-carousel [value]="banners" [circular]="true" [autoplayInterval]="3000">
+    <ng-template pTemplate="item" let-banner>
+      <div class="banner-item">
+        <img [src]="banner.image" alt="{{banner.title}}" style="width: 100%;">
+        <div class="banner-content">
+          <h2>{{banner.title}}</h2>
+          <p>{{banner.description}}</p>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>

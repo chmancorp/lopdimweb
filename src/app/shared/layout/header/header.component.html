@@ -1,4 +1,4 @@
-<p-menubar>
+<!-- <p-menubar>
     <div class="menubar-left">
       <button pButton type="button" icon="pi pi-bars" ></button>
     </div>
@@ -6,7 +6,11 @@
       <span>My Application</span>
     </div>
     <div class="menubar-right">
-      <!-- Add right-side buttons or icons here -->
     </div>
   </p-menubar>
-  
+   -->
+   <p-menubar [model]="items" class="p-mb-3">
+    <ng-template pTemplate="start">
+      <h1 class="p-mr-2">Mi Aplicación</h1>
+    </ng-template>
+  </p-menubar>

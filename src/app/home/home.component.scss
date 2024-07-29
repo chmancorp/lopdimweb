@@ -1,0 +1,14 @@
+.banner-item {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .banner-content {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+  }

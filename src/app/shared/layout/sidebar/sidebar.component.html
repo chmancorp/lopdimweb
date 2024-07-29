@@ -1,1 +1,11 @@
-<p>sidebar works!</p>
+<p-sidebar [(visible)]="visible" [baseZIndex]="10000" [modal]="false">
+    <ng-template pTemplate="footer">
+      <button pButton type="button" (click)="visible = false" label="Cerrar" icon="pi pi-times" class="p-button-secondary"></button>
+    </ng-template>
+    <h3>Menú</h3>
+    <p-menubar [model]="items"></p-menubar>
+  </p-sidebar>
+  
+  <!-- Botón para mostrar/ocultar el Sidebar -->
+  <button pButton type="button" icon="pi pi-bars" label="Menú" (click)="visible = !visible" class="p-button-primary"></button>
+  
